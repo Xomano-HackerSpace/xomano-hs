@@ -1,0 +1,16 @@
+:root {
+  --bg-color: #262a36;
+  --bg-input: #262636a8;
+  --blue: #3b6df8;
+  --darkblue: #294eb4;
+  --green: #7df7a8;
+  --cadetblue: #65878e;
+  --beige: #cec0ad;
+  --camel: #a3987e;
+  --lightblue: #c7d9f8;
+}
+
+body {
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/root.css" />
+    <link rel="stylesheet" href="/pages/form/form.css" />
+    <link rel="icon" href="/assets/svg/favicon.svg" type="image/svg+xml" />
+    <script src="/components/header/header.js"></script>
+    <script src="/components/hero/hero.js"></script>
+    <script src="/pages/form/form.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css"
+      rel="stylesheet"
+    />
+    <title>Membro Xômano</title>
+  </head>
+  <body>
+    <header-component
+      links='[{ "text": "HOME", "href": "/index.html" }]'
+      desktop-button="DISCORD SERVER"
+      desktop-button-action="window.location.href = 'https://discord.gg/H5P3jVAG'"
+    />
+    <hero-component
+      enable-gh="false"
+      title="Seja um membro da comunidade"
+      image="/assets/img/form-hero-bg.png"
+    />
+    <main>
+      <div class="container">
+        <form name="form" id="form">
+          <fieldset>
+            <legend>Informações Pessoais</legend>
+            <hr />
+            <div>
+              <div class="input-group">
+                <div class="input-wrapper">
+                  <label for="name">Nome <span>*</span></label>
+                  <input
+                    id="memberName"
+                    type="text"
+                    placeholder="John"
+                    required
+                    name="Nome"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="surname">Sobrenome <span>(opcional)</span></label>
+                  <input
+                    id="surname"
+                    type="text"
+                    placeholder="Doe"
+                    name="Sobrenome"
+                  />
+                </div>
+              </div>
+              <div class="input-wrapper">
+                <label for="email"
+                  >Email <span>* (digite um e-mail válido)</span></label
+                >
+                <input
+                  id="email"
+                  placeholder="johndoe@email.com"
+                  required
+                  type="email"
+                  name="Email"
+                />
+              </div>
+              <div class="input-group">
+                <div class="input-wrapper-row">
+                  <label for="discord" class="label-row">Discord </label>
+                  <input
+                    id="inputDiscord"
+                    placeholder="JohnDoe#1234"
+                    class="input-row"
+                    name="Discord"
+                  />
+                </div>
+
+                <div class="input-wrapper-row">
+                  <label for="github" class="label-row">GitHub</label>
+                  <input
+                    id="inputGithub"
+                    placeholder="JohnDoe"
+                    class="input-row"
+                    name="GitHub"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <footer><button type="submit" id="btnSubmit">SALVAR</button></footer>
+    </main>
+  </body>
+</html>

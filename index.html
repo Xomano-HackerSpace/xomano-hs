@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/svg/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/style/normalize.css" />
+    <link rel="stylesheet" href="/style/root.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/components/header/header.js"></script>
+    <script src="/components/hero/hero.js"></script>
+    <title>Xômano Hacker Space</title>
+  </head>
+  <body>
+    <header-component
+      id="first"
+      links='[
+        { "text": "GITHUB", "href":"https://github.com/Xomano-HackerSpace" },
+        { "text": "DISCORD SERVER", "href": "https://discord.gg/H5P3jVAG" },
+        { "text": "TELEGRAM", "href": "https://t.me/" },
+        { "text": "SEJA MEMBRO", "href": "/pages/form" }
+      ]'
+      desktop-button="SEJA MEMBRO"
+      desktop-button-action="window.location.href ='/pages/form'"
+    />
+    <hero-component
+      description="Somos um grupo de pessoas que se reúnem para compartilhar conhecimento e experiências, além de desenvolver projetos de software livre."
+    />
+    <div class="main-events main-container" id="projects">
+      <div class="main-events__title">Eventos</div>
+      <div class="main-events__table">
+        <a
+          class="main-events__row"
+          href="https://discord.gg/H5P3jVAG"
+          target="_blank"
+        >
+          <div class="main-events__icon">
+            <img src="/assets/svg/discord-mark.svg" alt="discord" />
+          </div>
+          <div class="main-events__name">
+            Monitoria de HTML, CSS e JS
+            <span class="main-span"> Sábado 25/03/2023 as 16:00 </span>
+          </div>
+          <div class="main-events__description">
+            event of html css java script api rest and sqlite
+          </div>
+          <div class="main-events__technologies">HTMl5, CSS3, java script</div>
+        </a>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="main-footer__last">
+        <div class="main-footer__copyright">© Cuiabá Hacker Space 2023</div>
+
+        <a class="main-footer__back" href="#first"
+          >back to top
+          <div class="main-footer__back-arrow">
+            <img
+              class="arrow"
+              src="/assets/svg/arrow-right-up.svg"
+              alt="arrow"
+            />
+          </div>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

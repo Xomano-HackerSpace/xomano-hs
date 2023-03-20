@@ -1,0 +1,111 @@
+.hero {
+  min-height: 60rem;
+  background-image: linear-gradient(rgba(0, 44, 65, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/assets/img/home-hero-bg.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-info h1 {
+  max-width: 48rem;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 2rem 0 3.2rem;
+  line-height: 4rem;
+}
+
+.hero p {
+  max-width: 48rem;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero-first {
+  margin-top: 7.2rem;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 'github hero-text';
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-github {
+  grid-area: github;
+  color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.hero-github_block {
+  display: flex;
+  background-color: var(--beige);
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  align-items: center;
+  position: relative;
+  border: 0.2rem solid var(--bg-color);
+  text-transform: uppercase;
+}
+
+.hero-github_block img {
+  margin-right: 0.4rem;
+  width: 1.6rem;
+}
+
+.hero-info p {
+  grid-area: hero-text;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: var(--lightblue);
+  margin-left: 3.2rem;
+}
+
+.hero-info img {
+  width: 48rem;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+@media (max-width: 48rem) {
+  .hero {
+    display: flex;
+    min-height: 48rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-first {
+    grid-template-columns: 1fr;
+  }
+
+  .gh-text {
+    display: none;
+  }
+
+  .hero-github {
+    margin-left: 1.6rem;
+  }
+
+  .hero-info {
+    margin-left: 1.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .hero-info img {
+    width: 100%;
+    height: auto;
+  }
+}
