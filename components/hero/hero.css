@@ -1,7 +1,7 @@
 .hero {
   min-height: 60rem;
   background-image: linear-gradient(rgba(0, 44, 65, 0.8), rgba(0, 0, 0, 0.8)),
-    url(/assets/img/home-hero-bg.png);
+    url(../../assets/img/home-hero-bg.png);
   display: flex;
   align-items: center;
   justify-content: center;

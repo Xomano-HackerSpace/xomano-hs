@@ -2,20 +2,20 @@
 class HeroComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <link rel="stylesheet" href="/components/hero/hero.css" />
+    <link rel="stylesheet" href="../../components/hero/hero.css" />
     <section class="hero" id="first">
       <div class="hero-first">
         <a href="https://github.com/Xomano-HackerSpace" target="_blank">
           <div class="hero-github">
             <div class="hero-github_block">
-              <img src="/assets/svg/github.svg" alt="github logo" />GITHUB
+              <img src="../../assets/svg/github.svg" alt="github logo" />GITHUB
             </div>
             <div class="hero-github_block gh-text">Xomano-HackerSpace</div>
           </div>
         </a>
         <div class="hero-info">
           <img
-            src="/assets/svg/xomano-hackerspace.svg"
+            src="../../assets/svg/xomano-hackerspace.svg"
             alt="xomano logo"
           />
           <h1></h1>

@@ -6,10 +6,10 @@ function showMobileMenu() {
 class HeaderComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <link rel="stylesheet" href="/components/header/header.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
     <header id="page-header" class="">
       <div class="header__logo">
-        <img class="header__logo-img" src="/assets/svg/xomano-hs.svg" alt="Xomano HS" />
+        <img class="header__logo-img" src="../../assets/svg/xomano-hs.svg" alt="Xomano HS" />
       </div>
       <div class="header__menu">
 

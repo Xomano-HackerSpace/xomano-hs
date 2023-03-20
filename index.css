@@ -112,7 +112,7 @@
 
 .main-span::after {
   content: '';
-  background-image: url(/assets/svg/arrow-right-up.svg);
+  background-image: url(./assets/svg/arrow-right-up.svg);
   position: absolute;
   width: 12px;
   height: 12px;
